@@ -270,14 +270,14 @@ tr:hover td{background:var(--fond);}
         </a>
 
         <div class="nav-section">Gestion</div>
-        <a href="#" class="nav-item">
+        <a href="{{route('super_admin.utilisateurs.index')}}" class="nav-item">
             <span class="ni">👑</span> Utilisateurs
         </a>
-        <a href="#" class="nav-item">
+        {{-- ✅ APRÈS --}}
+        <a href="{{ route('super_admin.candidats.index') }}" class="nav-item">
             <span class="ni">👨‍🎓</span> Candidats
-            <span class="nav-badge">4 821</span>
         </a>
-        <a href="#" class="nav-item">
+        <a href="{{ route('super_admin.etablissements.index') }}" class="nav-item">
             <span class="ni">🏫</span> Établissements
         </a>
         <a href="#" class="nav-item">
